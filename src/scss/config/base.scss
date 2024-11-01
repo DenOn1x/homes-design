@@ -1,0 +1,69 @@
+$fontFamily: "ArticoExpanded";
+
+$fontSize: "";
+$mainColor: "";
+
+
+html {
+  height: 100%;
+}
+
+
+body {
+  color: $mainColor;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: 140%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+$maxWidth: 1320;
+
+
+$md0: 1439.98;
+$md1: 1199.98;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 575.98;
+$md5: 319.98;
+
+._container {
+  max-width: $maxWidth + px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media screen and (min-width: 479.98px) {
+    max-width: 400px;
+  }
+
+  @media screen and (min-width: 575.98px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 767.98px) {
+    max-width: 710px;
+  }
+
+  @media screen and (min-width: 991.98px) {
+    max-width: 990px;
+  }
+
+  @media screen and (min-width: 1199.98px) {
+    max-width: 1680px;
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: 1639.98px) {
+    max-width: 1760px;
+    padding: 0 80px;
+  }
+}
+
+._container-xxx {
+  @media screen and (min-width: 1199.98px) {
+    max-width: calc(100% - 160px);
+    margin: auto;
+  }
+}

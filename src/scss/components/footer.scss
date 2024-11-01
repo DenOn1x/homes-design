@@ -1,0 +1,227 @@
+.footer {
+  position: relative;
+  flex: 0 0 auto;
+  background: #1C1D1F;
+  padding: 32px 0;
+  @media screen and (min-width: 991.98px) {
+    padding: 0;
+  }
+
+
+  @media screen and (min-width: 1199.98px) {
+    &:before, &:after {
+      content: '';
+      min-width: 1px;
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      background: #424447;
+    }
+    &:before {
+      left: 80px;
+    }
+    &:after {
+      right: 80px;
+    }
+  }
+
+}
+
+.top-footer {
+  &__wrapper {
+    display: grid;
+    gap: 32px;
+    @media screen and (min-width: 991.98px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+    }
+  }
+
+  &__info {
+    @media screen and (min-width: 991.98px) {
+      padding: 40px 40px 40px 0;
+      border-right: 1px solid #424447;
+    }
+    @media screen and (min-width: 1439.98px) {
+      padding: 80px 80px 80px 0;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 16px;
+    @media screen and (min-width: 1439.98px) {
+      margin-bottom: 32px;
+    }
+
+    a {
+      .icon {
+        display: block;
+        min-width: 312px;
+        width: 312px;
+        height: 62px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media screen and (min-width: 1439.98px) {
+          min-width: 504px;
+          width: 504px;
+          height: 100px;
+        }
+      }
+    }
+  }
+
+  &__addition {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFF;
+
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 1439.98px) {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__socials {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      li {
+        a {
+
+          span.icon {
+            display: block;
+            min-width: 32px;
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: .1s ease;
+            opacity: .5;
+            @media screen and (min-width: 991.98px) {
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__copy {
+    display: none;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFF;
+
+    margin-top: 56px;
+
+    @media screen and (min-width: 991.98px) {
+      display: block;
+    }
+  }
+
+  &__actions {
+    display: grid;
+    gap: 32px;
+    @media screen and (min-width: 991.98px) {
+      padding: 40px 0 40px 40px;
+    }
+    @media screen and (min-width: 1439.98px) {
+      padding: 80px 0 80px 80px;
+      gap: 64px;
+    }
+  }
+
+  &__nav {
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      li {
+        a {
+          display: inline-block;
+          padding: 8px 16px;
+          background: #2F3033;
+
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #FFF;
+          transition: .1s ease;
+          @media screen and (min-width: 991.98px) {
+            &:hover {
+              background: #424447;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__links {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      @media screen and (min-width: 1439.98px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px 24px;
+      }
+
+      li {
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          color: #F79E2A;
+          transition: .1s ease;
+          @media screen and (min-width: 991.98px) {
+            &:hover {
+              color: #CC7300;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #8495B8;
+    @media screen and (min-width: 1439.98px) {
+      margin-top: auto;
+    }
+  }
+}
+
+.bottom-footer {
+  margin-top: 32px;
+  @media screen and (min-width: 991.98px) {
+    display: none;
+  }
+
+  &__copy {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFF;
+  }
+}
+
+
