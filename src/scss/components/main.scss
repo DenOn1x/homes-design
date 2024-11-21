@@ -381,9 +381,15 @@ main {
           margin-bottom: 16px;
         }
 
-        span {
+        a {
           font-weight: 700;
           color: #F79E2A;
+          transition: .1s ease;
+          @media screen and (min-width: 991.98px) {
+            &:hover {
+              color: #CC7300;
+            }
+          }
         }
 
         &:before {
@@ -405,6 +411,13 @@ main {
     }
 
     .btn-custom {
+      &:after {
+        display: none;
+        @media screen and (min-width: 479.98px) {
+          display: block;
+        }
+      }
+
       @media screen and (min-width: 991.98px) {
         display: none;
       }
@@ -543,6 +556,14 @@ main {
       margin-top: 20px;
       @media screen and (min-width: 767.98px) {
         margin-top: auto;
+        &:after {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 1299.98px) {
+        &:after {
+          display: block;
+        }
       }
     }
   }
@@ -635,6 +656,14 @@ main {
           color: #F79E2A;
         }
 
+        .icon {
+          display: none;
+        }
+
+        .icon-hvr {
+          display: block;
+        }
+
       }
     }
 
@@ -652,6 +681,10 @@ main {
         width: 64px;
         height: 64px;
       }
+    }
+
+    .icon-hvr {
+      display: none;
     }
 
     p {

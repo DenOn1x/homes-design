@@ -172,15 +172,19 @@ section {
 
 
 .advertising-lead {
-  position: absolute;
+  //position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  //transform: translateX(-50%);
   bottom: 0;
   z-index: 3;
 
   width: 100%;
   max-width: 640px;
   background: #EDF1F7;
+  @media screen and (min-width: 767.98px) {
+    position: absolute;
+    transform: translateX(-50%);
+  }
 
   &__bg {
 
@@ -189,10 +193,14 @@ section {
 
   &__wrapper {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     gap: 32px;
 
     padding: 24px 32px 32px 32px;
+    @media screen and (min-width: 767.98px) {
+      flex-direction: row;
+    }
   }
 
   &__img {
@@ -251,11 +259,29 @@ section {
 
   &__bottom {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 767.98px) {
+      flex-direction: row;
+    }
 
     a {
-      min-width: 50%;
-      width: 50%;
+      width: 100%;
+
+      @media screen and (min-width: 767.98px) {
+        min-width: 50%;
+        width: 50%;
+      }
+
+    }
+
+    .btn-custom {
+      &:after {
+        display: none;
+        @media screen and (min-width: 479.98px) {
+          display: block;
+        }
+      }
     }
 
   }

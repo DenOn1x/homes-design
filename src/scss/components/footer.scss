@@ -58,12 +58,16 @@
     a {
       .icon {
         display: block;
-        min-width: 312px;
-        width: 312px;
+        min-width: 282px;
+        width: 282px;
         height: 62px;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        @media screen and (min-width: 479.98px) {
+          min-width: 312px;
+          width: 312px;
+        }
         @media screen and (min-width: 1439.98px) {
           min-width: 504px;
           width: 504px;
@@ -131,6 +135,42 @@
     }
   }
 
+  &__dev {
+    margin-top: 56px;
+    display: none;
+
+    @media screen and (min-width: 991.98px) {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .name {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #FFF;
+    }
+
+    a {
+      span {
+        display: block;
+        min-width: 208px;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.1s ease;
+        @media screen and (min-width: 991.98px) {
+          &:hover {
+            opacity: .9;
+          }
+        }
+      }
+    }
+  }
+
   &__actions {
     display: grid;
     gap: 32px;
@@ -139,7 +179,18 @@
     }
     @media screen and (min-width: 1439.98px) {
       padding: 80px 0 80px 80px;
-      gap: 64px;
+      gap: 40px;
+    }
+
+    .btn-custom {
+      height: 56px;
+      @media screen and (min-width: 991.98px) {
+        max-width: 280px;
+      }
+
+      &:after {
+        display: none;
+      }
     }
   }
 
@@ -222,6 +273,42 @@
     line-height: 20px;
     color: #FFF;
   }
+
+  &__dev {
+    margin-top: 32px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+
+    @media screen and (min-width: 991.98px) {
+      display: none;
+    }
+
+    .name {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #FFF;
+    }
+
+    a {
+
+
+      span {
+        display: block;
+        min-width: 208px;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.1s ease;
+      }
+    }
+  }
+
 }
 
 
