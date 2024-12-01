@@ -1,0 +1,120 @@
+.our-team--copy {
+
+
+  .our-team__wrapper {
+    display: grid;
+    gap: 24px;
+    @media screen and (min-width: 991.98px) {
+      gap: 0;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  }
+
+  .our-team__video {
+    padding: 0;
+    @media screen and (min-width: 1639.98px) {
+      margin-left: -80px;
+    }
+  }
+
+  .our-team__content {
+    @media screen and (min-width: 991.98px) {
+      padding: 32px 0 32px 40px;
+      border-left: 1px solid #C5D2EB;
+    }
+    @media screen and (min-width: 1639.98px) {
+      padding: 80px 0 80px 80px;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #6E7C99;
+
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      color: #1C1D1F;
+
+      margin-bottom: 24px;
+
+      @media screen and (min-width: 991.98px) {
+        font-size: 32px;
+        line-height: 40px;
+
+      }
+      @media screen and (min-width: 1439.98px) {
+        font-size: 40px;
+        line-height: 52px;
+      }
+
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #1C1D1F;
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+
+    ul {
+      li {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #1C1D1F;
+
+        position: relative;
+        padding-left: 44px;
+
+        @media screen and (min-width: 991.98px) {
+          font-size: 15px;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+
+        a {
+          font-weight: 700;
+          color: #F79E2A;
+          transition: .1s ease;
+          @media screen and (min-width: 991.98px) {
+            &:hover {
+              color: #CC7300;
+            }
+          }
+        }
+
+        &:before {
+          content: '';
+          display: block;
+          min-width: 20px;
+          width: 20px;
+          height: 24px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyMCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMEwyMCAxMi4xMTM0TDAuMDEyNjg0MyAyNEw5Ljc5NzIzIDEyLjExNjNMMCAwWiIgZmlsbD0iI0M1RDJFQiIvPgo8L3N2Zz4K);
+          transition: 0.3s ease;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+
+
+  }
+}

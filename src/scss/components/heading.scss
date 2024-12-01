@@ -1,0 +1,105 @@
+.heading-main {
+
+  padding: 32px 0;
+  border-bottom: 1px solid #C5D2EB;
+  @media screen and (min-width: 991.98px) {
+    padding: 0;
+  }
+
+  &__heading {
+    display: grid;
+    gap: 24px;
+
+    @media screen and (min-width: 991.98px) {
+      gap: 0;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__heading-head {
+    @media screen and (min-width: 991.98px) {
+      padding: 32px 40px 32px 0;
+    }
+    @media screen and (min-width: 1639.98px) {
+      padding: 48px 80px 80px 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 36px;
+      color: #1C1D1F;
+
+      @media screen and (min-width: 991.98px) {
+        font-size: 38px;
+        line-height: 48px;
+      }
+      @media screen and (min-width: 1439.98px) {
+        font-size: 44px;
+        line-height: 58px;
+      }
+      @media screen and (min-width: 1639.98px) {
+        font-size: 56px;
+        line-height: 68px;
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      color: #1C1D1F;
+
+      @media screen and (min-width: 991.98px) {
+        font-size: 38px;
+        line-height: 48px;
+      }
+      @media screen and (min-width: 1439.98px) {
+        font-size: 44px;
+        line-height: 58px;
+      }
+      @media screen and (min-width: 1639.98px) {
+        font-size: 48px;
+        line-height: 60px;
+      }
+    }
+
+  }
+
+  &__heading-content {
+    @media screen and (min-width: 991.98px) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      padding: 32px 0 32px 40px;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 1px;
+        height: 100%;
+        min-height: 400px;
+        background: #C5D2EB;
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+
+      @media screen and (min-width: 1639.98px) {
+        padding: 48px 0 80px 80px;
+
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #1C1D1F;
+    }
+  }
+
+}

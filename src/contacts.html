@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Контакты'
+})
+<body>
+@@include('html/header.html')
+
+<main class="page">
+    <div data-observ></div>
+
+    <section class="breadcrumbs">
+        <div class="_container-xxx">
+            <div class="breadcrumbs__container _container">
+                <ul>
+                    <li>
+                        <a href="/">Главная</a>
+                    </li>
+                    <li>
+                        Контакты
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="_container-xxx">
+            <div class="contacts__container _container">
+                <div class="contacts__wrapper">
+                    <div class="contacts__item item-contacts">
+                        <div class="item-contacts__content">
+                            <h1>Контакты <br> в Санкт-Петербурге</h1>
+                            <ul>
+                                <li>
+                                    <span class="icon"
+                                          style="background-image: url('/images/icons/contacts/ic_phone.svg')"></span>
+                                    <div class="item-contacts__content-info">
+                                        <span>Телефон</span>
+                                        <a href="tel:+74956645591">+7 (495) 664-55-91 (офис)</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="icon"
+                                          style="background-image: url('/images/icons/contacts/ic_mail.svg')"></span>
+                                    <div class="item-contacts__content-info">
+                                        <span>Электронная почта</span>
+                                        <a href="mailto:arch.homespro@gmail.com">arch.homespro@gmail.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="icon"
+                                          style="background-image: url('/images/icons/contacts/ic_address.svg')"></span>
+                                    <div class="item-contacts__content-info">
+                                        <span>Адрес офиса</span>
+                                        <a href="https://yandex.by/maps/2/saint-petersburg/house/liteyny_prospekt_41/Z0kYdQNnQEUFQFtjfXVyeHhgYw==/?ll=30.347902%2C59.939438&z=16.86"
+                                           target="_blank">Санкт-Петербург, Литейный пр-т 41</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="icon"
+                                          style="background-image: url('/images/icons/contacts/ic_time.svg')"></span>
+                                    <div class="item-contacts__content-info">
+                                        <span>Время работы</span>
+                                        <div class="time">Пн-Пт: c 10:00 до 19:00</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item-contacts__map">
+                            <div class="yandex-map" data-coord="[59.939437, 30.347902]" id=""></div>
+                        </div>
+                    </div>
+                    <div class="contacts__item item-contacts">
+                        <div class="item-contacts__map">
+                            <div class="yandex-map" data-coord="[55.764065, 37.683365]" id=""></div>
+                        </div>
+                        <div class="item-contacts__content">
+                            <h2>Контакты в Москве</h2>
+                            <ul>
+                                <li>
+                                    <span class="icon"
+                                          style="background-image: url('/images/icons/contacts/ic_phone.svg')"></span>
+                                    <div class="item-contacts__content-info">
+                                        <span>Телефон</span>
+                                        <a href="tel:+74956645591">+7 (495) 664-55-91 (офис)</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="icon"
+                                          style="background-image: url('/images/icons/contacts/ic_mail.svg')"></span>
+                                    <div class="item-contacts__content-info">
+                                        <span>Электронная почта</span>
+                                        <a href="mailto:arch.homespro@gmail.com">arch.homespro@gmail.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="icon"
+                                          style="background-image: url('/images/icons/contacts/ic_address.svg')"></span>
+                                    <div class="item-contacts__content-info">
+                                        <span>Адрес офиса</span>
+                                        <a href="https://yandex.by/maps/213/moscow/house/2_ya_baumanskaya_ulitsa_9_23s3/Z04YcA9jSkMCQFtvfXt3dXxlYQ==/?ll=37.683365%2C55.764065&z=16.85"
+                                           target="_blank">Москва, 2-я Бауманская ул., 9/23с3</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="icon"
+                                          style="background-image: url('/images/icons/contacts/ic_time.svg')"></span>
+                                    <div class="item-contacts__content-info">
+                                        <span>Время работы</span>
+                                        <div class="time">Пн-Пт: c 10:00 до 19:00</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="homes-subscribe homes-subscribe--contacts">
+        <div class="_container-xxx">
+            <div class="homes-subscribe__container _container">
+                <div class="homes-subscribe__wrapper">
+                    <div class="homes-subscribe__contacts">
+                        <h2>Школа проектирования на связи!</h2>
+                        <div class="sub-title">Задавайте вопросы, уточняйте нюансы — поможем в кратчайшие сроки.</div>
+                    </div>
+                    <div class="homes-subscribe__form">
+                        <form action="#" method="POST">
+                            <div class="homes-subscribe__fields">
+                                <div class="homes-subscribe__field">
+                                    <input type="text" id="NAME" placeholder="Ввод текста">
+                                    <label for="NAME">Ваше имя</label>
+                                </div>
+                                <div class="homes-subscribe__field">
+                                    <input type="text" id="NUMBER" placeholder="Ввод текста" required>
+                                    <label for="NUMBER">Контактный телефон <span>*</span></label>
+                                </div>
+                            </div>
+                            <div class="homes-subscribe__field">
+                                <textarea name="" id="TEXT" placeholder="Ввод текста"></textarea>
+                                <label for="TEXT">Текст вопроса или сообщения</label>
+                            </div>
+                            <div class="homes-subscribe__fields-bottom">
+                                <button class="btn-custom">Отправить</button>
+                                <span>Нажимая на кнопку, вы соглашаетесь на <a
+                                        href="#">Обработку персональных данных</a></span>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('html/footer.html')
+
+
+</body>
+</html>

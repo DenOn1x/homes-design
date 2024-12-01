@@ -1,0 +1,100 @@
+.faq {
+  border-bottom: 1px solid #C5D2EB;
+
+  .accordion {
+    &__item {
+      padding: 12px 0;
+
+      border-top: 1px solid #EDF1F7;
+      border-bottom: 1px solid #C5D2EB;
+      cursor: pointer;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      @media screen and (min-width: 991.98px) {
+        padding: 24px 32px;
+      }
+
+      @media screen and (min-width: 1199.98px) {
+        margin: 0 -40px;
+      }
+      @media screen and (min-width: 1639.98px) {
+        margin: 0 -80px;
+      }
+
+      &.INIT {
+        .icon {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+
+    &__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 12px;
+
+
+      .name {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #1C1D1F;
+        @media screen and (min-width: 991.98px) {
+          font-size: 20px;
+          line-height: 32px;
+        }
+
+        span {
+          font-weight: 400;
+          color: #6E7C99;
+        }
+      }
+
+      .icon {
+        display: block;
+        min-width: 20px;
+        width: 20px;
+        height: 24px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: .3s ease;
+      }
+    }
+
+    &__text {
+      opacity: 0;
+      overflow: hidden;
+      height: 0;
+      transform: translateY(-10%);
+      transition: 0.3s ease;
+
+      &.INIT {
+        opacity: 1;
+        height: auto;
+        transform: translateY(0);
+      }
+
+      .accordion__text-body {
+        margin-top: 24px;
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #1C1D1F;
+
+          &:not(:last-child) {
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+
+}

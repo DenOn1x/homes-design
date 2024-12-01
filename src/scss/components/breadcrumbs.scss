@@ -1,0 +1,45 @@
+.breadcrumbs {
+  padding-top: 40px;
+  @media screen and (min-width: 991.98px) {
+    padding-top: 80px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    li {
+
+      display: inline-flex;
+      align-items: center;
+
+      a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #1C1D1F;
+      }
+
+
+      &:not(:last-child) {
+        &:after {
+          content: '';
+
+          display: block;
+          min-width: 16px;
+          width: 16px;
+          height: 1px;
+          background: #1C1D1F;
+          margin: 0 16px;
+        }
+      }
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #6E7C99;
+
+    }
+  }
+}

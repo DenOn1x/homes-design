@@ -3,18 +3,31 @@
 
 @import 'config/reset';
 
-
 // @import 'libs/..';
 //@import 'config/scrollbar';
 
 @import 'config/base';
 @import 'config/keyframes';
 
-
 @import 'config/common';
+@import 'config/animations';
 
 @import 'components/header';
 @import 'components/main';
 @import 'components/footer';
+
+@import "components/breadcrumbs";
+@import "components/heading";
+
+@import "components/homes-subscribe--copy";
+@import "components/our-team--copy";
+@import "components/articles--copy";
+
+@import "pages/about";
+@import "pages/courses";
+@import "pages/faq";
+@import "pages/contacts";
+@import "pages/books";
+@import "pages/useful-materials";
 
 

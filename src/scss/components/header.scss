@@ -7,6 +7,9 @@
   @media screen and (min-width: 1439.98px) {
     height: 80px;
   }
+  @media screen and (min-width: 1639.98px) {
+    height: 84px;
+  }
 
   &__fixed {
     position: fixed;
@@ -112,6 +115,17 @@
         &:before, &:after {
           top: 0;
           height: calc(100% + 81px);
+
+        }
+      }
+
+      @media screen and (min-width: 1639.98px) {
+        top: 84px;
+        height: calc(100% - 84px);
+
+        &:before, &:after {
+          top: 0;
+          height: calc(100% + 84px);
 
         }
       }
@@ -641,6 +655,12 @@
         }
       }
     }
+
+    @media screen and (min-width: 1639.98px) {
+      min-width: 48px;
+      width: 48px;
+      height: 48px;
+    }
   }
 
   &__burger {
@@ -673,6 +693,12 @@
           background: #1C1D1F;
         }
       }
+    }
+
+    @media screen and (min-width: 1639.98px) {
+      min-width: 48px;
+      width: 48px;
+      height: 48px;
     }
 
     &.open .burger-button {
